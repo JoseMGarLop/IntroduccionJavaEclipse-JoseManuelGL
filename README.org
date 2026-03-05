@@ -6,17 +6,25 @@
 #+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
 #+options: timestamp:t title:t toc:t todo:t |:t
 #+date: <2026-02-19 jue>
-#+email: josegaspar@LinuxMint22-PePS
+#+email: jg.sanchezgarcia@edu.gva.es
 #+language: es
 #+select_tags: export
 #+exclude_tags: noexport
 #+creator: Emacs 29.3 (Org mode 9.6.15)
 #+cite_export:
+#+HTML_LINK_HOME: index.html
+#+HTML_LINK_UP: index.html
+#+SETUP_FILE: https://github.com/fniessen/org-html-themes/blob/master/org/theme-readtheorg.setup
 
 
-* 1. Descarga e instalación del Entorno de Desarrollo Integrado Eclipse
+
+*  Descarga e instalación del Entorno de Desarrollo Integrado Eclipse
 1. Descargamos el IDE Eclipse desde su página web oficial ([[https://www.eclipse.org/downloads/]]).
+   #+CAPTION: Página oficial de Eclipse.
+   #+ATTR_HTML: :width 800px
    [[./images/20260219_EclipseWebSite.png]]
+   #+CAPTION: Descarga de Eclipse.
+   #+ATTR_HTML: :width 800px
    [[./images/20260219_002_EclipseDownload.png]]
 
 2. Descomprimimos el archivo descargado.
@@ -26,12 +34,16 @@
      ./eclipse-inst
    #+end_src
 3. Instalamos Eclipe IDE for Java Developers.
+   #+CAPTION: Instalador de Eclipse.
+   #+ATTR_HTML: :width 800px
    [[./images/20260219003_EclipseInstaller.png]]
+   #+CAPTION: Pantalla del instalador de Eclipse.
+   #+ATTR_HTML: :width 800px
    [[./images/20260219004_EclipseJavaDevelopers.png]]
 4. Creamos un nuevo proyecto Maven en Eclipse llamado /IntroJavaEclipse-INICIALES/.
   
 
-* 2. ¿Qué es la programación estructurada?
+* ¿Qué es la programación estructurada?
 La programación estructurada es un paradigma que organiza el código en bloques lógicos para facilitar la lectura, el mantenimiento y la detección de errores.
 
 Se basa en tres estructuras fundamentales:
@@ -42,7 +54,7 @@ Se basa en tres estructuras fundamentales:
 
 Su objetivo es evitar el uso excesivo de saltos como =goto= y promover un código más claro y modular.
 
-* 3. Java como lenguaje estructurado
+* Java como lenguaje estructurado
 Aunque Java es un lenguaje orientado a objetos, permite trabajar perfectamente con programación estructurada, especialmente al inicio del aprendizaje.
 
 Características relevantes:
@@ -52,7 +64,7 @@ Características relevantes:
 - Uso obligatorio de clases, pero el flujo del programa puede ser estructurado.
 - Uso de bloques ={ }= para delimitar estructuras.
 
-* 4. Estructura básica de un programa en Java
+* Estructura básica de un programa en Java
 #+CAPTION: Estructura básica de un programa en java
 #+NAME: ejemplo001.java
 #+begin_src java
@@ -69,7 +81,7 @@ Elementos clave:
 - *main*: punto de entrada del programa.
 - *{ }*: delimitan bloques de código.
 
-* 5. Variables y tipos de datos
+* Variables y tipos de datos
 
 Este ejemplo muestra distintos tipos de variables en Java y el tamaño que ocupa cada tipo primitivo según la especificación del lenguaje.
 #+CAPTION: Variable y tipos de datos
@@ -128,7 +140,7 @@ Este ejemplo muestra distintos tipos de variables en Java y el tamaño que ocupa
 | String  | Variable | Depende del contenido          |
 
 
-* 6. Entrada y salida básica
+* Entrada y salida básica
 
 **Salida por consola:**
 
@@ -146,9 +158,9 @@ int numero = sc.nextInt();
 String texto = sc.nextLine();
 #+end_src
 
-* 7. Estructuras de control
+* Estructuras de control
 
-** 7.1. Secuencia
+**  Secuencia
 #+begin_src java
   public class Ejemplo003 {
   	/**
@@ -164,9 +176,9 @@ String texto = sc.nextLine();
   }
 #+end_src
 
-** 7.2. Selección
+** Selección
 
-*** 7.2.1. if / else
+*** if / else
 #+begin_src java
 if (edad >= 18) {
     System.out.println("Mayor de edad");
@@ -175,7 +187,7 @@ if (edad >= 18) {
 }
 #+end_src
 
-*** 7.2.2. switch
+***  switch
 #+begin_src java
 switch (dia) {
     case 1: System.out.println("Lunes"); break;
@@ -184,30 +196,30 @@ switch (dia) {
 }
 #+end_src
 
-** 7.3. Iteración
+** Iteración
 
-*** 7.3.1. for
+*** for
 #+begin_src java
 for (int i = 0; i < 5; i++) {
     System.out.println(i);
 }
 #+end_src
 
-*** 7.3.2. while
+*** while
 #+begin_src java
 while (contador < 10) {
     contador++;
 }
 #+end_src
 
-*** 7.3.3. do-while
+***  do-while
 #+begin_src java
 do {
     opcion = sc.nextInt();
 } while (opcion != 0);
 #+end_src
 
-* 8. Funciones (métodos)
+* Funciones (métodos)
 
 #+begin_src java
 public static int sumar(int a, int b) {
@@ -227,7 +239,7 @@ Ventajas:
 - Claridad.
 - Mantenimiento más sencillo.
 
-* 9. Buenas prácticas en programación estructurada
+*  Buenas prácticas en programación estructurada
 
 - Usar nombres descriptivos.
 - Evitar bloques demasiado largos.
@@ -235,7 +247,7 @@ Ventajas:
 - Mantener una indentación consistente.
 - Dividir el código en métodos pequeños.
 
-* 10. Ejemplo completo
+* Ejemplo completo
 
 #+begin_src java
 import java.util.Scanner;
@@ -261,7 +273,7 @@ public class Main {
 }
 #+end_src
 
-* 11. Ejercicios propuestos
+* Ejercicios propuestos
 
 *Ejercicios de Secuencia*
 1. Escribe un programa que pida dos números y muestre:
@@ -379,11 +391,19 @@ Debes entregar un documento PDF que contenga:
 - Breve explicación de cómo has resuelto los ejercicios.
 - Dirección URL del repositorio remoto GitHub donde estés ejecutando tu código.
 - Captura de pantalla que muestre que los tests han sido ejecutados correctamente en local utilizando el comando =mvn -B test --file pom.xml=
+   #+CAPTION: Captura de Pantalla de la Ejecución de los Tests en local.
+   #+ATTR_HTML: :width 800px
   [[./images/20260304_TestsLocal.png]]
+    #+CAPTION: Captura de Pantalla de la Ejecución de los Tests en local.
+   #+ATTR_HTML: :width 800px
   [[./images/20260304_TestsLocal2.png]]
 - Captura de pantalla de como los test han sido ejecutados correctamente de forma remota en GitHub
+   #+CAPTION: Captura de Pantalla de la Ejecución de los Tests en GitHub.
+   #+ATTR_HTML: :width 800px
   [[./images/20260304_TestGitHub.png]]
--[[./images/20260326_EjecucionTestGitHub.png]]  
+   #+CAPTION: Captura de Pantalla de la Ejecución de los Tests en GitHub.
+   #+ATTR_HTML: :width 800px
+   [[./images/20260326_EjecucionTestGitHub.png]]  
 
 * Enlaces de interés
 - [[https://www.w3schools.com/java/java_intro.asp][W3C School - Java Introduction.]]
