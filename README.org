@@ -14,7 +14,7 @@
 #+cite_export:
 #+HTML_LINK_HOME: index.html
 #+HTML_LINK_UP: index.html
-#+SETUP_FILE: https://github.com/fniessen/org-html-themes/blob/master/org/theme-readtheorg.setup
+#+SETUPFILE: https://github.com/fniessen/org-html-themes/blob/master/org/theme-readtheorg.setup
 
 
 
