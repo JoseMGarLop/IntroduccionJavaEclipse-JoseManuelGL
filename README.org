@@ -306,6 +306,7 @@ public class Main {
 8. Pide un año y determina si es bisiesto.
 
 9. Pide tres números y muestra cuál es el mayor.
+   
    *Ejercicios de Bucles (for, while, do-while)*
 
 10. Muestra los números del 1 al 100 usando:
@@ -322,6 +323,7 @@ public class Main {
 14. Calcula el factorial de un número usando un =for=.
 
 15. Pide un número N y muestra todos los números del 1 al N que sean múltiplos de 3.
+    
     *Ejercicios con Métodos (Funciones)*
 
 16. Crea un método =esPar(int n)= que devuelva =true= si el número es par.
@@ -335,6 +337,7 @@ public class Main {
 20. Crea un método =esPrimo(int n)= que determine si un número es primo.
 
 21. Crea un método =contarVocales(String texto)= que devuelva cuántas vocales tiene una cadena.
+    
     *Ejercicios Integradores*
 
 22. *Menú interactivo*
