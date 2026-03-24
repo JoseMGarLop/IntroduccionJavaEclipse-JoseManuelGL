@@ -1,10 +1,10 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio016 {
 	
 	//COMPLETAR METODO
 	public boolean esPar(int n) {
-		return false;
+		 return n % 2 == 0;
     }
 
     public static void main(String[] args) {

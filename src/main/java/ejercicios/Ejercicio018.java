@@ -1,9 +1,10 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio018 {
 	
 	//COMPLETAR METODO
 	public void saludar(String nombre) {
+		  System.out.println("¡Hola " + nombre + "! Bienvenido/a.");
     }
 
     public static void main(String[] args) {

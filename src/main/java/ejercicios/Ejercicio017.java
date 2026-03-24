@@ -1,12 +1,15 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio017 {
 	
 	//COMPLETAR METODO
 	public int maximo(int a, int b) {
-		return 0;
-    }
-
+		if (a > b) {
+			return a;
+		    } else {
+		    return b;
+		    }
+	}
     public static void main(String[] args) {
     	Ejercicio017 ejercicio017 = new Ejercicio017();
         java.util.Scanner scanner = new java.util.Scanner(System.in);

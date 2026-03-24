@@ -1,9 +1,9 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio004 {
 	//COMPLETAR METODO
 	public double calcularArea(double base, double altura) {
-		return 0.0;
+		 return (base * altura) / 2;
     }
 
     public static void main(String[] args) {

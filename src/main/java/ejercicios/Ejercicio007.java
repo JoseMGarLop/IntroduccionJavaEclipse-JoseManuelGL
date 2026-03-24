@@ -1,10 +1,19 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio007 {
 	
 	//COMPLETAR METODO
 	public String obtenerDiaSemana(int dia) {
-		return "";
+		switch(dia) {
+        case 1: return "Lunes";
+        case 2: return "Martes";
+        case 3: return "Miércoles";
+        case 4: return "Jueves";
+        case 5: return "Viernes";
+        case 6: return "Sábado";
+        case 7: return "Domingo";
+        default: return "Número inválido. Debe ser del 1 al 7.";
+    }
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ejercicios;
+package jar;
 
 import java.util.Scanner;
 
@@ -6,9 +6,11 @@ public class Ejercicio015 {
 	
 	//COMPLETAR METODO
 	public void mostrarMultiplosTres(int n) {
-		
+		System.out.println("Múltiplos de 3 hasta " + n + ":");
+        for (int i = 3; i <= n; i += 3) {
+            System.out.print(i + " ");
+        }
     }
-
     public static void main(String[] args) {
     	Ejercicio015 ejercicio015 = new Ejercicio015();
         Scanner scanner = new Scanner(System.in);

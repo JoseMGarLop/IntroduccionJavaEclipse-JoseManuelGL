@@ -1,10 +1,20 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio006 {
-	
+
 	//COMPLETAR METODO
 	public String obtenerCalificacion(double nota) {
-		return "";
+		if (nota < 0 || nota > 10) {
+            return "La nota es menor que 0";
+        } else if (nota < 5) {
+            return "Insuficiente";
+        } else if (nota < 7) {
+            return "Suficiente";
+        } else if (nota < 9) {
+            return "Bien";
+        } else {
+            return "Sobresaliente";
+        }
     }
 
     public static void main(String[] args) {

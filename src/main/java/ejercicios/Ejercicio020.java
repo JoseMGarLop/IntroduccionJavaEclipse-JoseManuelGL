@@ -1,11 +1,19 @@
-package ejercicios;
+package jar;
 
 public class Ejercicio020 {
 	
 	//COMPLETAR METODO
 	public boolean esPrimo(int n) {
-        return false;
-    }
+		 if (n <= 1) {
+	            return false;
+	        }
+	        for (int i = 2; i * i <= n; i++) {
+	            if (n % i == 0) {
+	                return false;
+	            }
+	        }
+	        return true;
+	    }
 
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
@@ -15,7 +23,7 @@ public class Ejercicio020 {
         int numero = scanner.nextInt();
         
         System.out.println(numero + " " + 
-            (ejercicio.esPrimo(numero) ? "ES primo" : "NO es primo"));
+            (ejercicio.esPrimo(numero) ? "es primo" : "no es primo"));
         
         scanner.close();
     }
